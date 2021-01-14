@@ -4,7 +4,7 @@ const getRandomElement = (arr) => {
   return arr[randomIndex];
 };
 
-//Objects which contain sonnets
+//Objects which contain sonnet titles, sonnet octaves, and octave sestets
 const shakespeareSonnets = {
   sonnetTitle: ["Sonnet 129?", "Sonnet 65?", "Sonnet 75?"],
   sonnetTextOctave: [
@@ -13,9 +13,9 @@ const shakespeareSonnets = {
     "Line 1 So are you to my thoughts as food to life, ~Line 2 Or as sweet seasoned showers are to the ground; ~Line 3 And for the peace of you I hold such strife ~Line 4 As ‘twixt a miser and his wealth is found; ~Line 5 Now proud as an enjoyer, and anon ~Line 6 Doubting the filching age will steal his treasure; ~Line 7 Now counting best to be with you alone, ~Line 8 Then better’d that the world may see my pleasure;",
   ],
   sonnetTextSestet: [
-    "Line 9 Mad in pursuit and in possession so, ~Line 10 Had, having, and in quest to have, extreme, ~Line 11 A bliss in proof, and proved, a very woe, ~Line 12 Before, a joy proposed; behind, a dream. ~Line 13 All this the world well knows, yet none knows well ~Line 14 To shun the heaven that leads men to this hell.",
-    "Line 9 O fearful meditation! Where, alack, ~Line 10 Shall Time’s best jewel from Time’s chest lie hid? ~Line 11 Or what strong hand can hold his swift foot back? ~Line 12 Or who his spoil of beauty can forbid? ~Line 13 O, none, unless this miracle have might, ~Line 14 That in black ink my love may still shine bright.",
-    "Line 9 Sometime all full with feasting on your sight, ~Line 10 And by and by clean starved for a look; ~Line 11 Possessing or pursuing no delight ~Line 12 Save what is had or must from you be took. ~Line 13 Thus do I pine and surfeit day by day, ~Line 14 Or gluttoning on all, or all away. ",
+    "~Line 9 Mad in pursuit and in possession so, ~Line 10 Had, having, and in quest to have, extreme, ~Line 11 A bliss in proof, and proved, a very woe, ~Line 12 Before, a joy proposed; behind, a dream. ~Line 13 All this the world well knows, yet none knows well ~Line 14 To shun the heaven that leads men to this hell.",
+    "~Line 9 O fearful meditation! Where, alack, ~Line 10 Shall Time’s best jewel from Time’s chest lie hid? ~Line 11 Or what strong hand can hold his swift foot back? ~Line 12 Or who his spoil of beauty can forbid? ~Line 13 O, none, unless this miracle have might, ~Line 14 That in black ink my love may still shine bright.",
+    "~Line 9 Sometime all full with feasting on your sight, ~Line 10 And by and by clean starved for a look; ~Line 11 Possessing or pursuing no delight ~Line 12 Save what is had or must from you be took. ~Line 13 Thus do I pine and surfeit day by day, ~Line 14 Or gluttoning on all, or all away. ",
   ],
 };
 
@@ -39,3 +39,7 @@ ${linedSonnetOctave.join("\n")} ${linedSonnetSestet.join("\n")}`
 };
 
 sonnetBreaker(shakespeareSonnets);
+
+//download mixed-messages folder
+//access mixed-messages folder in terminal
+//run node script.js multiple times to recieve jumbled sonnet
