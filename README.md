@@ -2,7 +2,7 @@
 
 ## Project Title: Shooken Up Shakespearean Sonnets
 
-### Randomly generates a mixture of 3 different Shakesprean sonnets "shooken up" by title, octave, and sestet.
+### Randomly generates a mixture of 5 different Shakesprean sonnets "shooken up" by title, octave, and sestet.
 
 ## Table of contents
 
