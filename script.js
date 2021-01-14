@@ -11,7 +11,7 @@ const shakespeareSonnets = {
     "Sonnet 65?",
     "Sonnet 75?",
     "Sonnet 3?",
-    "Sonnet 55",
+    "Sonnet 55?",
   ],
   sonnetTextOctave: [
     "Line 1 The expense of spirit in a waste of shame ~Line 2 Is lust in action, and, till action, lust ~Line 3 Is perjured, murderous, bloody, full of blame, ~Line 4 Savage, extreme, rude, cruel, not to trust, ~Line 5 Enjoyed no sooner but despised straight, ~Line 6 Past reason hunted, and no sooner had ~Line 7 Past reason hated as a swallowed bait ~Line 8 On purpose laid to make the taker mad;",
@@ -29,17 +29,19 @@ const shakespeareSonnets = {
   ],
 };
 
-const sonnetBreaker = (obj) => {
-  let randomSonnetPieceTitle = getRandomElement(shakespeareSonnets.sonnetTitle);
-  let randomSonnetPieceOctave = getRandomElement(
+const sonnetShakerBreaker = (obj) => {
+  const randomSonnetPieceTitle = getRandomElement(
+    shakespeareSonnets.sonnetTitle
+  );
+  const randomSonnetPieceOctave = getRandomElement(
     shakespeareSonnets.sonnetTextOctave
   );
-  let randomSonnetPieceSester = getRandomElement(
+  const randomSonnetPieceSester = getRandomElement(
     shakespeareSonnets.sonnetTextSestet
   );
-  let linedSonnetTitle = randomSonnetPieceTitle.split("~");
-  let linedSonnetOctave = randomSonnetPieceOctave.split("~");
-  let linedSonnetSestet = randomSonnetPieceSester.split("~");
+  const linedSonnetTitle = randomSonnetPieceTitle.split("~");
+  const linedSonnetOctave = randomSonnetPieceOctave.split("~");
+  const linedSonnetSestet = randomSonnetPieceSester.split("~");
 
   console.log(
     `Shakespeare has mixed up his sonnets in a sort-of mental bonnet to give you a newly-shaken Shakesperean sonnet:
@@ -48,4 +50,4 @@ ${linedSonnetOctave.join("\n")} ${linedSonnetSestet.join("\n")}`
   );
 };
 
-sonnetBreaker(shakespeareSonnets);
+sonnetShakerBreaker(shakespeareSonnets);
