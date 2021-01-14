@@ -36,12 +36,12 @@ const sonnetShakerBreaker = (obj) => {
   const randomSonnetPieceOctave = getRandomElement(
     shakespeareSonnets.sonnetTextOctave
   );
-  const randomSonnetPieceSester = getRandomElement(
+  const randomSonnetPieceSestet = getRandomElement(
     shakespeareSonnets.sonnetTextSestet
   );
   const linedSonnetTitle = randomSonnetPieceTitle.split("~");
   const linedSonnetOctave = randomSonnetPieceOctave.split("~");
-  const linedSonnetSestet = randomSonnetPieceSester.split("~");
+  const linedSonnetSestet = randomSonnetPieceSestet.split("~");
 
   console.log(
     `Shakespeare has mixed up his sonnets in a sort-of mental bonnet to give you a newly-shaken Shakesperean sonnet:
