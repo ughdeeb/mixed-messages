@@ -1,7 +1,8 @@
-function generateRandomNumber(num) {
-  // generates random number between 0 and 1
-  return Math.floor(Math.random() * num);
-}
+//Function that, when passed an array, returns a random element from an array. Note that array.length returns the length of the array like
+const getRandomElement = (arr) => {
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  return arr[randomIndex];
+};
 
 //Objects which contain sonnets
 const shakespeareSonnets = {
@@ -18,17 +19,16 @@ const shakespeareSonnets = {
   ],
 };
 
-//Get random index of an array
+// Function that prints text with the randomized sonnet
+function sonnetShaker() {
+  console.log(
+    `Shakespeare has shooken up his sonnets in some of his socks and bonnets and now you have a newly-shaken Shakesperean sonnet:
+  
+  ${getRandomElement(shakespeareSonnets.sonnetTitle)}:
+  ${getRandomElement(shakespeareSonnets.sonnetTextOctave)}
+  ${getRandomElement(shakespeareSonnets.sonnetTextSestet)}`
+  );
+}
+// // console.log(generateRandomNumber());
 
-const getRandomElement = (arr) => {
-  const randomIndex = Math.floor(Math.random() * arr.length);
-  return arr[randomIndex];
-};
-
-console.log(`${getRandomElement(shakespeareSonnets.sonnetTitle)}`);
-
-// console.log(
-//   `Shakespeare has shooken up his sonnets in some of his sock and bonnets and now you have a newly shaken Shakesperean sonnet: ${shakespeareSonnets.sonnetTextSestet}`
-// );
-
-// console.log(generateRandomNumber());
+sonnetShaker();
